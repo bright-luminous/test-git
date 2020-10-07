@@ -1,0 +1,39 @@
+body {
+    background-color: azure;
+    margin: 0;
+    padding: 0;
+  }
+
+#navigation {
+    text-align: right;
+  }
+
+#title {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium';
+}
+
+#searchBar {
+  text-align: center;
+}
+
+#aboutUs {
+  text-align: left;
+  width: 50%;
+}
+
+table {
+  text-align: center;
+  align-items: center;
+  width: 50%;
+}
+
+table th td {
+  border: 1px solid black;
+}
+
+#center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}

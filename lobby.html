@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style-chic.css">
+        <link href="https://unpkg.com/tabulator-tables@4.1.4/dist/css/tabulator.min.css" rel="stylesheet">
+        <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.1.4/dist/js/tabulator.min.js"></script>
+        <title>HIW KAO lobby</title>
+    </head>
+
+    <body>
+        <section id="navigation">
+            <a href="./searchBar.html">Search engine</a>
+            <a href="index.html">Home</a>
+        </section>
+        <hr>
+        <section id="title">
+            <h1>LOBBY</h1>
+        </section>
+        <section id="table"></section>
+            <script>
+                var tabledata = [
+                    {name:"Kavin", order:"chicken set", price:"257"}
+                ];
+
+                var table = new Tabulator("#table", {
+                    height:205,
+                    data:tabledata, //assign data to table
+                    layout:"fitColumns",
+                    
+                    columns:[ //Define Table Columns
+	 	                {title:"Username", field:"name", width:150},
+	 	                {title:"Order", field:"order", align:"left"},
+	 	                {title:"Price", field:"price"},
+ 	                ]
+                });
+            </script>
+        
+    </body>
+</html>
